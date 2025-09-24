@@ -126,7 +126,7 @@ body {
   .grid img { height: 140px; }
 }
 .edu-logo {
-  width: 5px;   /* shrink logo size */
+  width: 20px;   /* shrink logo size */
   height: auto;  /* keep aspect ratio */
   object-fit: contain;
   margin-right: 0.75rem;

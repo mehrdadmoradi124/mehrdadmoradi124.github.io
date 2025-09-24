@@ -78,7 +78,7 @@ body {
   box-shadow: 0 10px 20px rgba(0,0,0,.35);
 
   /* add this line */
-  margin-top: 2rem;  /* adjust the number until it looks right */
+  margin-top: 5rem;  /* adjust the number until it looks right */
 }
 .hero h1 { margin: .8rem 0 .2rem; }
 .location { color: var(--muted); margin: 0 0 .6rem; }

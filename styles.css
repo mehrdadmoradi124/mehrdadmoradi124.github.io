@@ -70,9 +70,15 @@ body {
   border-radius: 16px; padding: 2rem 1.2rem; box-shadow: var(--shadow);
 }
 .avatar {
-  width: 140px; height: 140px; object-fit: cover;
-  border-radius: 50%; border: 3px solid rgba(255,255,255,.12);
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,.12);
   box-shadow: 0 10px 20px rgba(0,0,0,.35);
+
+  /* add this line */
+  margin-top: 2rem;  /* adjust the number until it looks right */
 }
 .hero h1 { margin: .8rem 0 .2rem; }
 .location { color: var(--muted); margin: 0 0 .6rem; }
@@ -121,14 +127,5 @@ body {
   .grid img { height: 140px; }
 }
 
-.avatar {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgba(255,255,255,.12);
-  box-shadow: 0 10px 20px rgba(0,0,0,.35);
 
-  /* add this line */
-  margin-top: 2rem;  /* adjust the number until it looks right */
-}
+

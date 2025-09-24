@@ -126,6 +126,11 @@ body {
   .avatar { width: 120px; height: 120px; }
   .grid img { height: 140px; }
 }
-
+.edu-logo {
+  width: 40px;   /* shrink logo size */
+  height: auto;  /* keep aspect ratio */
+  object-fit: contain;
+  margin-right: 0.75rem;
+}
 
 

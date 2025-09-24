@@ -1,11 +1,84 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mehrdad Moradi</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>This is my first GitHub Pages site.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mehrdad Moradi — Portfolio</title>
+  <meta name="description" content="Mehrdad Moradi — portfolio, research, projects, and experience.">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header / Hamburger -->
+  <header class="site-header">
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href="index.html">Mehrdad Moradi</a>
+  </header>
+
+  <!-- Side Drawer Nav -->
+  <nav id="siteNav" class="side-nav" aria-hidden="true">
+    <div class="side-nav__inner">
+      <a class="side-nav__brand" href="index.html">Mehrdad Moradi</a>
+      <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="side-projects.html">Side Projects</a></li>
+        <li><a href="industry-partners.html">Industry Partners</a></li>
+        <li><a href="service.html">Service</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <main class="container">
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <img class="avatar" src="images/profile.jpg" alt="Professional headshot of Mehrdad Moradi" />
+      <h1>Mehrdad Moradi</h1>
+      <p class="location">Atlanta, Georgia, USA</p>
+
+      <!-- Social / Scholar / GitHub / LinkedIn / Email -->
+      <p class="social">
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <!-- Scholar icon -->
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 3L1 12l11 9 11-9L12 3zm0 4.5l6.5 5.3-2.3 1.9c-.8.6-1.6.9-2.5.9s-1.7-.3-2.5-.9L5.5 12.8 12 7.5zM9.9 16.7c.6.4 1.3.6 2.1.6s1.5-.2 2.1-.6l1.3-1V20H8.6v-4.3l1.3 1z"/></svg>
+        </a>
+        <a href="https://github.com/mehrdadmoradi124" target="_blank" rel="noopener" aria-label="GitHub">
+          <!-- GitHub icon -->
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.8-1.5-3.8-1.5-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.3-1.1.6-1.4-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.7-2.8 5.7-5.4 6 .3.2.6.8.6 1.6v2.4c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <!-- LinkedIn icon -->
+          <svg viewBox="0 0 24 24" class="icon"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.8-1.8 3.7-1.8 3.9 0 4.6 2.1 4.6 4.8V21h-4v-5.3c0-1.2 0-2.7-1.6-2.7s-1.9 1.2-1.9 2.6V21H9z"/></svg>
+        </a>
+        <a href="mailto:you@email.com" aria-label="Email">
+          <!-- Mail icon -->
+          <svg viewBox="0 0 24 24" class="icon"><path d="M2 4h20v16H2z" fill="none" stroke="currentColor"/><path d="M22 6l-10 7L2 6" fill="none" stroke="currentColor"/></svg>
+        </a>
+      </p>
+
+      <p class="intro"><YOUR INTRO></p>
+    </section>
+
+    <!-- Album -->
+    <section class="album">
+      <h2>Photo Album</h2>
+      <div class="grid">
+        <!-- Replace with your real images -->
+        <img src="images/album-1.jpg" alt="Album photo 1">
+        <img src="images/album-2.jpg" alt="Album photo 2">
+        <img src="images/album-3.jpg" alt="Album photo 3">
+        <img src="images/album-4.jpg" alt="Album photo 4">
+        <img src="images/album-5.jpg" alt="Album photo 5">
+        <img src="images/album-6.jpg" alt="Album photo 6">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Mehrdad Moradi · Atlanta, Georgia, USA</small>
+  </footer>
+</body>
 </html>

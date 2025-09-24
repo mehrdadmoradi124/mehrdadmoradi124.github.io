@@ -120,3 +120,15 @@ body {
   .avatar { width: 120px; height: 120px; }
   .grid img { height: 140px; }
 }
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,.12);
+  box-shadow: 0 10px 20px rgba(0,0,0,.35);
+
+  /* add this line */
+  margin-top: 2rem;  /* adjust the number until it looks right */
+}

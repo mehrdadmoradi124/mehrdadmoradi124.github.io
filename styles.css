@@ -77,8 +77,7 @@ body {
   border: 3px solid rgba(255,255,255,.12);
   box-shadow: 0 10px 20px rgba(0,0,0,.35);
 
-  /* add this line */
-  margin-top: 5rem;  /* adjust the number until it looks right */
+  object-position: center 20%; /* shift photo inside circle */
 }
 .hero h1 { margin: .8rem 0 .2rem; }
 .location { color: var(--muted); margin: 0 0 .6rem; }

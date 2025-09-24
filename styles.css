@@ -270,3 +270,57 @@ body {
   .pub-card { grid-template-columns: 1.15fr 2fr; }
   .pub-media { aspect-ratio: 4 / 3; }
 }
+/* ===== Projects grid ===== */
+.proj-grid {
+  --gap: clamp(16px, 2.5vw, 28px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap);
+  margin-block: 1rem 2rem;
+}
+
+.proj-card {
+  border: 1px solid hsl(0 0% 90%);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 1px 0 hsl(0 0% 90% / .6);
+  transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+}
+.proj-card:hover {
+  transform: translateY(-2px);
+  border-color: hsl(210 100% 60% / .35);
+  box-shadow: 0 8px 24px hsl(210 20% 30% / .08);
+}
+
+.proj-body {
+  padding: 1rem 1.2rem 1.3rem;
+  display: grid;
+  gap: .5rem;
+}
+
+.proj-title {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  line-height: 1.3;
+  color: #2b77b7;
+}
+
+.proj-meta {
+  margin: 0;
+  font-size: .9rem;
+  color: hsl(220 8% 38%);
+}
+
+.proj-actions {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.proj-points {
+  margin: .2rem 0 0 1rem;
+  padding: 0;
+  list-style: disc;
+  font-size: .92rem;
+  color: hsl(220 10% 30%);
+}

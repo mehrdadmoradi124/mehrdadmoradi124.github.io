@@ -34,58 +34,121 @@
 
   <main class="container page">
     <h1>Significant Projects</h1>
-    <ul>
-      <li>
-        <strong>Generative modeling of contaminated data</strong> — Atlanta, GA (Fall 2024)<br>
-        <a href="https://drive.google.com/file/d/1zXDCHSiqHCUScQ6B_YR2PQs7SooG-ZjJ/view?usp=sharing" target="_blank" rel="noopener">Report</a><br>
-        • Extended the denoising score matching algorithm to accommodate Laplacian and exponential noise.<br>
-        • Developed a novel training algorithm combining denoising score matching and contrastive divergence.
-      </li>
 
-      <li>
-        <strong>RobustCLIP: Robust fine-tuning of CLIP on contaminated data</strong> — Atlanta, GA (Fall 2024)<br>
-        <a href="https://drive.google.com/file/d/1BYSVEvdszsklW8iG4YTpXg3Tt3tmNTPu/view?usp=sharing" target="_blank" rel="noopener">Report</a><br>
-        • Conducted experiments with CLIP-ViT-B/32 on iMet Collection 2019 dataset.<br>
-        • Developed a novel L1 norm-based robust loss.<br>
-        • Achieved over 100% improvement in F2 score for contamination levels under 50%.
-      </li>
+<div class="proj-grid">
+  <!-- Project 1 -->
+  <article class="proj-card">
+    <div class="proj-body">
+      <h3 class="proj-title">
+        Generative modeling of contaminated data
+      </h3>
+      <p class="proj-meta">Atlanta, GA · Fall 2024</p>
 
-      <li>
-        <strong>Leveraging Large Language Models for Author Attribution in Classical Philosophy Texts</strong> — Atlanta, GA (Spring 2024)<br>
-        <a href="https://drive.google.com/file/d/1vokA_ryoB_XWnCMKhqMiMm4-AEI6bXQg/view?usp=sharing" target="_blank" rel="noopener">Report</a> ·
-        <a href="https://github.com/Bluefin-Tuna/Savages" target="_blank" rel="noopener">Code</a> ·
-        <a href="https://github.com/Bluefin-Tuna/Savages" target="_blank" rel="noopener">Data</a><br>
-        • Ran experiments with Llama2, Llama3, and GPT-3.5-Turbo.<br>
-        • Demonstrated preliminary LLM ability in author identification beyond memorization.<br>
-        • Showed that few-shot and chain-of-thought prompting did not improve results.
-      </li>
+      <div class="proj-actions">
+        <a class="btn btn--pdf" href="https://drive.google.com/file/d/1zXDCHSiqHCUScQ6B_YR2PQs7SooG-ZjJ/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+      </div>
 
-      <li>
-        <strong>Human Drawing Reconstruction From Different Camera Viewpoints</strong> — Atlanta, GA (Spring 2024)<br>
-        <a href="https://drive.google.com/file/d/12ijx3-y-dWbkAvo08LFSMiBJaRdT4Am3/view?usp=sharing" target="_blank" rel="noopener">Report</a><br>
-        • Implemented hand-tracking with hand keypoint detection using Multiview Bootstrapping.<br>
-        • Used a CNN model for sketch classification from different viewpoints.
-      </li>
+      <ul class="proj-points">
+        <li>Extended the denoising score matching algorithm to accommodate Laplacian and exponential noise.</li>
+        <li>Developed a novel training algorithm combining denoising score matching and contrastive divergence.</li>
+      </ul>
+    </div>
+  </article>
 
-      <li>
-        <strong>Medical Image Analysis Project — Brain Tumor Detection with Deep Learning</strong> — Atlanta, GA (Spring 2023)<br>
-        <a href="https://drive.google.com/file/d/1Ym2hSTR5zVTOKVmB9bW0W6tS3jExm1qM/view?usp=sharing" target="_blank" rel="noopener">Report</a> ·
-        <a href="https://colab.research.google.com/drive/1BQifTnv5aU1DBqobvt-RqOYhZnTyz3oT?usp=sharing" target="_blank" rel="noopener">Code</a> ·
-        <a href="https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri/data" target="_blank" rel="noopener">Data</a><br>
-        • Built CNN and RNN models with interpretability via gradient saliency maps and attention visualizations.<br>
-        • Enhanced accuracy with statistical classification (random forest) on feature maps.<br>
-        • Achieved 80% accuracy with PCA-based classification, 75% with CNN and RNN.
-      </li>
+  <!-- Project 2 -->
+  <article class="proj-card">
+    <div class="proj-body">
+      <h3 class="proj-title">RobustCLIP: Robust fine-tuning of CLIP on contaminated data</h3>
+      <p class="proj-meta">Atlanta, GA · Fall 2024</p>
 
-      <li>
-        <strong>Optimizing Deep Learning for Medical Image Analysis — Blood Composition Detection</strong> — Atlanta, GA (Spring 2023)<br>
-        <a href="https://drive.google.com/file/d/1D3TfFQOais8ExOYU1zymYdd7p-KeOpO1/view?usp=sharing" target="_blank" rel="noopener">Report</a><br>
-        • Used pre-trained YOLO variants for robust blood cell detection.<br>
-        • Improved memory efficiency (50%) and inference speed (20%) by pruning and 16-bit precision.<br>
-        • Explored IOU for duplicate removal and optimizer effects.<br>
-        • Visualized convolutional kernels for model interpretability.
-      </li>
-    </ul>
+      <div class="proj-actions">
+        <a class="btn btn--pdf" href="https://drive.google.com/file/d/1BYSVEvdszsklW8iG4YTpXg3Tt3tmNTPu/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+      </div>
+
+      <ul class="proj-points">
+        <li>Conducted experiments with CLIP-ViT-B/32 on iMet Collection 2019 dataset.</li>
+        <li>Developed a novel L1 norm-based robust loss.</li>
+        <li>Achieved over 100% improvement in F2 score for contamination levels under 50%.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- Project 3 -->
+  <article class="proj-card">
+    <div class="proj-body">
+      <h3 class="proj-title">Leveraging Large Language Models for Author Attribution in Classical Philosophy Texts</h3>
+      <p class="proj-meta">Atlanta, GA · Spring 2024</p>
+
+      <div class="proj-actions">
+        <a class="btn btn--pdf" href="https://drive.google.com/file/d/1vokA_ryoB_XWnCMKhqMiMm4-AEI6bXQg/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+        <a class="btn" href="https://github.com/Bluefin-Tuna/Savages" target="_blank" rel="noopener">Code</a>
+        <a class="btn" href="https://github.com/Bluefin-Tuna/Savages" target="_blank" rel="noopener">Data</a>
+      </div>
+
+      <ul class="proj-points">
+        <li>Ran experiments with Llama2, Llama3, and GPT-3.5-Turbo.</li>
+        <li>Demonstrated preliminary LLM ability in author identification beyond memorization.</li>
+        <li>Showed that few-shot and chain-of-thought prompting did not improve results.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- Project 4 -->
+  <article class="proj-card">
+    <div class="proj-body">
+      <h3 class="proj-title">Human Drawing Reconstruction From Different Camera Viewpoints</h3>
+      <p class="proj-meta">Atlanta, GA · Spring 2024</p>
+
+      <div class="proj-actions">
+        <a class="btn btn--pdf" href="https://drive.google.com/file/d/12ijx3-y-dWbkAvo08LFSMiBJaRdT4Am3/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+      </div>
+
+      <ul class="proj-points">
+        <li>Implemented hand-tracking with hand keypoint detection using Multiview Bootstrapping.</li>
+        <li>Used a CNN model for sketch classification from different viewpoints.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- Project 5 -->
+  <article class="proj-card">
+    <div class="proj-body">
+      <h3 class="proj-title">Medical Image Analysis Project — Brain Tumor Detection with Deep Learning</h3>
+      <p class="proj-meta">Atlanta, GA · Spring 2023</p>
+
+      <div class="proj-actions">
+        <a class="btn btn--pdf" href="https://drive.google.com/file/d/1Ym2hSTR5zVTOKVmB9bW0W6tS3jExm1qM/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+        <a class="btn" href="https://colab.research.google.com/drive/1BQifTnv5aU1DBqobvt-RqOYhZnTyz3oT?usp=sharing" target="_blank" rel="noopener">Code</a>
+        <a class="btn" href="https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri/data" target="_blank" rel="noopener">Data</a>
+      </div>
+
+      <ul class="proj-points">
+        <li>Built CNN and RNN models with interpretability via gradient saliency maps and attention visualizations.</li>
+        <li>Enhanced accuracy with statistical classification (random forest) on feature maps.</li>
+        <li>Achieved 80% accuracy with PCA-based classification, 75% with CNN and RNN.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- Project 6 -->
+  <article class="proj-card">
+    <div class="proj-body">
+      <h3 class="proj-title">Optimizing Deep Learning for Medical Image Analysis — Blood Composition Detection</h3>
+      <p class="proj-meta">Atlanta, GA · Spring 2023</p>
+
+      <div class="proj-actions">
+        <a class="btn btn--pdf" href="https://drive.google.com/file/d/1D3TfFQOais8ExOYU1zymYdd7p-KeOpO1/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+      </div>
+
+      <ul class="proj-points">
+        <li>Used pre-trained YOLO variants for robust blood cell detection.</li>
+        <li>Improved memory efficiency (50%) and inference speed (20%) by pruning and 16-bit precision.</li>
+        <li>Explored IOU for duplicate removal and optimizer effects.</li>
+        <li>Visualized convolutional kernels for model interpretability.</li>
+      </ul>
+    </div>
+  </article>
+</div>
   </main>
 
   <footer class="site-footer">

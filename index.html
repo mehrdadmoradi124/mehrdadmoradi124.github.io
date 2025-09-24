@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mehrdad Moradi — Portfolio</title>
+  <meta name="description" content="Mehrdad Moradi — portfolio, research, projects, and experience.">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header / Hamburger -->
+  <header class="site-header">
+    <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href="#home">Mehrdad Moradi</a>
+  </header>
+
+  <!-- Side Drawer Nav (anchors to sections on this page) -->
+  <nav id="siteNav" class="side-nav" aria-hidden="true">
+    <div class="side-nav__inner">
+      <a class="side-nav__brand" href="#home">Mehrdad Moradi</a>
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#presentations">Professional Presentations</a></li>
+        <li><a href="#projects">Side Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <main class="container">
+    <!-- ============== HOME (from index.html) ============== -->
+    <section id="home" class="hero">
+      <img class="avatar" src="images/2023 - Bonnie Moret Photography - Mehrdad Moradi - Sep 8.jpg" alt="Professional headshot of Mehrdad Moradi" />
+      <h1>Mehrdad Moradi</h1>
+      <p class="location">Atlanta, Georgia, USA</p>
+
+      <section class="about">
+        <h2>About Me</h2>
+        <p>Mehrdad Moradi is a fourth-year PhD student in Machine Learning at the Industrial and Systems Engineering Department of Georgia Tech. He is
+        also pursuing a Master’s degree in Computer Science with a specialization in machine learning. He has extensive expertise in generative models,
+        with his PhD research centered on their intersection with statistics. His work focuses on applications in computer vision, particularly image-based
+        anomaly detection. His developed methodologies for image-based anomaly detection have been used for additive manufacturing process
+        characterization at the Department of Mechanics at Politecnico di Milano, PV panel smoke and fire detection at the U.S. Department of Energy,
+        and battery capacity prediction and battery cell anomaly detection at Ford Motor Company.</p>
+      </section>
+
+      <!-- Social / Scholar / GitHub / LinkedIn / Email -->
+      <p class="social">
+        <a href="https://scholar.google.com/citations?user=UMGW2OAAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 3L1 12l11 9 11-9L12 3zm0 4.5l6.5 5.3-2.3 1.9c-.8.6-1.6.9-2.5.9s-1.7-.3-2.5-.9L5.5 12.8 12 7.5zM9.9 16.7c.6.4 1.3.6 2.1.6s1.5-.2 2.1-.6l1.3-1V20H8.6v-4.3l1.3 1z"/></svg>
+        </a>
+        <a href="https://github.com/mehrdadmoradi124" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.8-1.5-3.8-1.5-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .9.1-.7.3-1.1.6-1.4-2.6-.3-5.4-1.3-5.4-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.7-2.8 5.7-5.4 6 .3.2.6.8.6 1.6v2.4c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/themehrdadmoradi/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.8-1.8 3.7-1.8 3.9 0 4.6 2.1 4.6 4.8V21h-4v-5.3c0-1.2 0-2.7-1.6-2.7s-1.9 1.2-1.9 2.6V21H9z"/></svg>
+        </a>
+        <a href="mailto:mmoradi6@gatech.edu" aria-label="Email">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M2 4h20v16H2z" fill="none" stroke="currentColor"/><path d="M22 6l-10 7L2 6" fill="none" stroke="currentColor"/></svg>
+        </a>
+      </p>
+
+      <p class="intro"><YOUR INTRO></p>
+    </section>
+
+    <!-- Album -->
+    <section class="album">
+      <h2>Photo Album</h2>
+      <div class="grid">
+        <img src="images/IMG_4859.jpeg" alt="Album photo IMG_4859">
+        <img src="images/IMG_7255.jpeg" alt="Album photo IMG_7255">
+        <img src="images/IMG_7342.jpeg" alt="Album photo IMG_7342">
+        <img src="images/IMG_7471.jpeg" alt="Album photo IMG_7471">
+        <img src="images/IMG_7527.jpeg" alt="Album photo IMG_7527">
+        <img src="images/paris2.jpeg" alt="Album photo paris2">
+        <img src="images/smoky mountain.JPEG" alt="Album photo smoky mountain">
+        <img src="images/smoky mountains.JPEG" alt="Album photo smoky mountains">
+      </div>
+    </section>
+
+    <!-- ============== EDUCATION ============== -->
+    <section id="education" class="page">
+      <h1>Education</h1>
+
+      <div class="edu-item">
+        <img src="images/GT.png" alt="Georgia Tech logo" class="edu-logo">
+        <div>
+          <h2>Ph.D. in Machine Learning</h2>
+          <p><strong>ISyE, Georgia Institute of Technology</strong> · 2022 – 2027</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <img src="images/GT.png" alt="Georgia Tech logo" class="edu-logo">
+        <div>
+          <h2>M.Sc. in Computer Science</h2>
+          <p><strong>Georgia Institute of Technology</strong> · 2022 – 2025</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <img src="images/SH.png" alt="Sharif University logo" class="edu-logo">
+        <div>
+          <h2>B.Sc. in Industrial Engineering</h2>
+          <p><strong>Sharif University of Technology</strong> · 2017 – 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== RESEARCH ============== -->
+    <section id="research" class="page">
+      <h1>Research</h1>
+      <p>My research focuses on machine learning for anomaly detection and segmentation, with an emphasis on diffusion models and robust unsupervised methods for complex industrial surfaces and processes.</p>
+
+      <h2>Publications</h2>
+      <div class="pub-grid">
+        <!-- Pub 1 -->
+        <article class="pub-card">
+          <figure class="pub-media">
+            <span class="badge badge--preprint">arXiv</span>
+            <img src="images/ssdnet-thumb.jpg" alt="Thumbnail for 'A Single Image Is All You Need'">
+          </figure>
+          <div class="pub-body">
+            <h3 class="pub-title">
+              <a href="#" aria-label="Publication page">
+                A Single Image Is All You Need: Zero-Shot Anomaly Localization Without Training Data
+              </a>
+            </h3>
+            <p class="pub-authors">Mehrdad Moradi, Shengzhe Chen, Hao Yan, Kamran Paynabar</p>
+            <p class="pub-venue"><em>arXiv preprint</em> · <span class="pill pill--new">New</span></p>
+            <div class="pub-actions">
+              <a class="btn btn--pdf" href="paper-ssdnet.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://github.com/mehrdadmoradi124/SSDnet" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pub 2 -->
+        <article class="pub-card">
+          <figure class="pub-media">
+            <span class="badge badge--conf">ICMLA</span>
+            <img src="images/radar-thumb.jpg" alt="Thumbnail for 'Single-Step Reconstruction-Free Anomaly Detection'">
+          </figure>
+          <div class="pub-body">
+            <h3 class="pub-title">
+              <a href="#">
+                Single-Step Reconstruction-Free Anomaly Detection and Segmentation via Diffusion Models
+              </a>
+            </h3>
+            <p class="pub-authors">Mehrdad Moradi, Marco Grasso, Bianca Maria Colosimo, Kamran Paynabar</p>
+            <p class="pub-venue"><em>ICMLA 2025</em></p>
+            <div class="pub-actions">
+              <a class="btn btn--pdf" href="paper-radar.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://github.com/mehrdadmoradi124/RADAR" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pub 3 -->
+        <article class="pub-card">
+          <figure class="pub-media">
+            <span class="badge badge--workshop">ICCV VISION</span>
+            <img src="images/rddpm-thumb.jpg" alt="Thumbnail for 'RDDPM: Robust Denoising Diffusion Probabilistic Model'">
+          </figure>
+          <div class="pub-body">
+            <h3 class="pub-title">
+              <a href="#">
+                RDDPM: Robust Denoising Diffusion Probabilistic Model for Unsupervised Anomaly Segmentation
+              </a>
+            </h3>
+            <p class="pub-authors">Mehrdad Moradi, Kamran Paynabar</p>
+            <p class="pub-venue"><em>ICCV VISION 2025</em> · <span class="pill">Oral</span></p>
+            <div class="pub-actions">
+              <a class="btn btn--pdf" href="paper-rddpm.pdf" target="_blank" rel="noopener">PDF</a>
+              <a class="btn" href="https://github.com/mehrdadmoradi124/RDDPM" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============== PROFESSIONAL PRESENTATIONS ============== -->
+    <section id="presentations" class="page">
+      <h2>Professional Presentations</h2>
+
+      <div class="pres-grid">
+        <!-- Pres 1 -->
+        <article class="pres-card">
+          <figure class="pres-media">
+            <span class="badge badge--talk">Talk</span>
+            <img src="images/pres-diffusion-thumb.jpg" alt="Diffusion models presentation thumbnail">
+          </figure>
+          <div class="pres-body">
+            <h3 class="pres-title">
+              Diffusion models for anomaly detection in general textured surfaces
+            </h3>
+            <p class="pres-meta">
+              Atlanta, Georgia · <em>2025 INFORMS Annual Meeting</em> (Oct. 2025)
+            </p>
+            <p class="pres-desc">
+              Presented my work in the “Advanced Data-Driven Insights for Complex Industrial Processes” session at INFORMS.
+            </p>
+          </div>
+        </article>
+
+        <!-- Pres 2 -->
+        <article class="pres-card">
+          <figure class="pres-media">
+            <span class="badge badge--talk">Talk</span>
+            <img src="images/pres-rddpm-thumb.jpg" alt="RDDPM presentation thumbnail">
+          </figure>
+          <div class="pres-body">
+            <h3 class="pres-title">
+              RDDPM: Robust Denoising Diffusion Probabilistic Model for Unsupervised Anomaly Segmentation
+            </h3>
+            <p class="pres-meta">
+              Atlanta, Georgia · <em>2025 IISE Annual Conference and Expo</em> (June 2025)
+            </p>
+          </div>
+        </article>
+
+        <!-- Pres 3 -->
+        <article class="pres-card">
+          <figure class="pres-media">
+            <span class="badge badge--talk">Talk</span>
+            <img src="images/pres-spatter-thumb.jpg" alt="Spatter trajectory analysis presentation thumbnail">
+          </figure>
+          <div class="pres-body">
+            <h3 class="pres-title">
+              Spatter Trajectory Analysis for Characterizing Laser Powder Bed Fusion Process
+            </h3>
+            <p class="pres-meta">
+              Phoenix, Arizona · <em>2023 INFORMS Annual Meeting</em> (Oct. 2023)
+            </p>
+            <p class="pres-desc">
+              Presented my work in the “Advancements in spatial-temporal analytics” session at INFORMS.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============== SIDE PROJECTS ============== -->
+    <section id="projects" class="page">
+      <h1>Significant Projects</h1>
+
+      <div class="proj-grid">
+        <!-- Project 1 -->
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3 class="proj-title">Generative modeling of contaminated data</h3>
+            <p class="proj-meta">Atlanta, GA · Fall 2024</p>
+            <div class="proj-actions">
+              <a class="btn btn--pdf" href="https://drive.google.com/file/d/1zXDCHSiqHCUScQ6B_YR2PQs7SooG-ZjJ/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+            </div>
+            <ul class="proj-points">
+              <li>Extended the denoising score matching algorithm to accommodate Laplacian and exponential noise.</li>
+              <li>Developed a novel training algorithm combining denoising score matching and contrastive divergence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3 class="proj-title">RobustCLIP: Robust fine-tuning of CLIP on contaminated data</h3>
+            <p class="proj-meta">Atlanta, GA · Fall 2024</p>
+            <div class="proj-actions">
+              <a class="btn btn--pdf" href="https://drive.google.com/file/d/1BYSVEvdszsklW8iG4YTpXg3Tt3tmNTPu/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+            </div>
+            <ul class="proj-points">
+              <li>Conducted experiments with CLIP-ViT-B/32 on iMet Collection 2019 dataset.</li>
+              <li>Developed a novel L1 norm-based robust loss.</li>
+              <li>Achieved over 100% improvement in F2 score for contamination levels under 50%.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3 class="proj-title">Leveraging Large Language Models for Author Attribution in Classical Philosophy Texts</h3>
+            <p class="proj-meta">Atlanta, GA · Spring 2024</p>
+            <div class="proj-actions">
+              <a class="btn btn--pdf" href="https://drive.google.com/file/d/1vokA_ryoB_XWnCMKhqMiMm4-AEI6bXQg/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+              <a class="btn" href="https://github.com/Bluefin-Tuna/Savages" target="_blank" rel="noopener">Code</a>
+              <a class="btn" href="https://github.com/Bluefin-Tuna/Savages" target="_blank" rel="noopener">Data</a>
+            </div>
+            <ul class="proj-points">
+              <li>Ran experiments with Llama2, Llama3, and GPT-3.5-Turbo.</li>
+              <li>Demonstrated preliminary LLM ability in author identification beyond memorization.</li>
+              <li>Showed that few-shot and chain-of-thought prompting did not improve results.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3 class="proj-title">Human Drawing Reconstruction From Different Camera Viewpoints</h3>
+            <p class="proj-meta">Atlanta, GA · Spring 2024</p>
+            <div class="proj-actions">
+              <a class="btn btn--pdf" href="https://drive.google.com/file/d/12ijx3-y-dWbkAvo08LFSMiBJaRdT4Am3/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+            </div>
+            <ul class="proj-points">
+              <li>Implemented hand-tracking with hand keypoint detection using Multiview Bootstrapping.</li>
+              <li>Used a CNN model for sketch classification from different viewpoints.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3 class="proj-title">Medical Image Analysis Project — Brain Tumor Detection with Deep Learning</h3>
+            <p class="proj-meta">Atlanta, GA · Spring 2023</p>
+            <div class="proj-actions">
+              <a class="btn btn--pdf" href="https://drive.google.com/file/d/1Ym2hSTR5zVTOKVmB9bW0W6tS3jExm1qM/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+              <a class="btn" href="https://colab.research.google.com/drive/1BQifTnv5aU1DBqobvt-RqOYhZnTyz3oT?usp=sharing" target="_blank" rel="noopener">Code</a>
+              <a class="btn" href="https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri/data" target="_blank" rel="noopener">Data</a>
+            </div>
+            <ul class="proj-points">
+              <li>Built CNN and RNN models with interpretability via gradient saliency maps and attention visualizations.</li>
+              <li>Enhanced accuracy with statistical classification (random forest) on feature maps.</li>
+              <li>Achieved 80% accuracy with PCA-based classification, 75% with CNN and RNN.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="proj-card">
+          <div class="proj-body">
+            <h3 class="proj-title">Optimizing Deep Learning for Medical Image Analysis — Blood Composition Detection</h3>
+            <p class="proj-meta">Atlanta, GA · Spring 2023</p>
+            <div class="proj-actions">
+              <a class="btn btn--pdf" href="https://drive.google.com/file/d/1D3TfFQOais8ExOYU1zymYdd7p-KeOpO1/view?usp=sharing" target="_blank" rel="noopener">Report</a>
+            </div>
+            <ul class="proj-points">
+              <li>Used pre-trained YOLO variants for robust blood cell detection.</li>
+              <li>Improved memory efficiency (50%) and inference speed (20%) by pruning and 16-bit precision.</li>
+              <li>Explored IOU for duplicate removal and optimizer effects.</li>
+              <li>Visualized convolutional kernels for model interpretability.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Mehrdad Moradi · Atlanta, Georgia, USA</small>
+  </footer>
+</body>
+</html>

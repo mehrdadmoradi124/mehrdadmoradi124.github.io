@@ -132,4 +132,141 @@ body {
   margin-right: 0.75rem;
 }
 
+/* ===== Publications grid ===== */
+.pub-grid {
+  --gap: clamp(16px, 2.5vw, 28px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap);
+  margin-block: 1rem 2rem;
+}
 
+.pub-card {
+  border: 1px solid hsl(0 0% 90%);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 0 hsl(0 0% 90% / .6);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease;
+}
+.pub-card:hover {
+  transform: translateY(-2px);
+  border-color: hsl(210 100% 60% / .35);
+  box-shadow: 0 8px 24px hsl(210 20% 30% / .08);
+}
+
+/* Media (thumbnail) */
+.pub-media {
+  position: relative;
+  aspect-ratio: 16 / 9;            /* keeps tidy card height */
+  margin: 0;
+  background: linear-gradient(180deg, #f7f9fc, #eef3fb);
+  overflow: hidden;
+}
+.pub-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Top-left badge like “arXiv / ICLR” */
+.badge {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  padding: .28rem .5rem;
+  border-radius: 8px;
+  color: #fff;
+  background: #111;
+  box-shadow: 0 4px 14px hsl(0 0% 0% / .25);
+}
+.badge--preprint { background: #2b6ef2; }   /* blue */
+.badge--conf     { background: #3c9d53; }   /* green */
+.badge--workshop { background: #8b5cf6; }   /* purple */
+
+/* Body */
+.pub-body {
+  padding: 1rem 1rem 1.1rem 1rem;
+  display: grid;
+  gap: .4rem;
+}
+.pub-title {
+  margin: 0;
+  font-size: clamp(1.02rem, 1.8vw, 1.25rem);
+  line-height: 1.25;
+}
+.pub-title a {
+  text-decoration: none;
+  color: #2b77b7;                    /* screenshot-like blue */
+}
+.pub-title a:hover,
+.pub-title a:focus {
+  text-decoration: underline;
+}
+.pub-authors,
+.pub-venue {
+  color: hsl(220 8% 38%);
+  margin: 0;
+  font-size: .95rem;
+}
+
+/* Pills like “New”, “Spotlight” */
+.pill {
+  display: inline-block;
+  font-size: .78rem;
+  padding: .18rem .5rem;
+  border-radius: 999px;
+  background: hsl(210 16% 92%);
+  color: hsl(220 20% 30%);
+}
+.pill--new {
+  background: #ffefef;
+  color: #c23616;
+}
+
+/* Buttons */
+.pub-actions {
+  margin-top: .35rem;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+.btn {
+  --btn-pad: .42rem .7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: var(--btn-pad);
+  border: 1px solid hsl(210 15% 85%);
+  border-radius: 8px;
+  text-decoration: none;
+  color: hsl(220 25% 30%);
+  font-weight: 600;
+  font-size: .9rem;
+  background: #fff;
+  transition: background .15s ease, border-color .15s ease, transform .05s ease;
+}
+.btn:hover { background: hsl(210 20% 97%); }
+.btn:active { transform: translateY(1px); }
+
+.btn--pdf {
+  border-color: hsl(210 100% 60% / .35);
+  background: hsl(210 100% 97%);
+  color: hsl(210 80% 35%);
+}
+.btn--pdf::before {
+  content: "📄";
+  font-size: 1rem;
+}
+
+/* Slightly denser layout on very wide screens */
+@media (min-width: 1100px) {
+  .pub-card { grid-template-columns: 1.15fr 2fr; }
+  .pub-media { aspect-ratio: 4 / 3; }
+}

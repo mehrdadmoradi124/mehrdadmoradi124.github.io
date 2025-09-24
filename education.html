@@ -4,10 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Education — Mehrdad Moradi</title>
+  <meta name="description" content="Mehrdad Moradi — Education background.">
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Header / Hamburger -->
   <header class="site-header">
     <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -15,6 +17,7 @@
     <a class="brand" href="index.html">Mehrdad Moradi</a>
   </header>
 
+  <!-- Side Drawer Nav -->
   <nav id="siteNav" class="side-nav" aria-hidden="true">
     <div class="side-nav__inner">
       <a class="side-nav__brand" href="index.html">Mehrdad Moradi</a>
@@ -31,11 +34,31 @@
 
   <main class="container page">
     <h1>Education</h1>
-    <ul>
-      <li><strong>University Name</strong> — Degree, Major, Graduation Year. GPA (if strong).</li>
-      <li><strong>Relevant Coursework</strong>: Algorithms, ML, Databases, Operating Systems, etc.</li>
-      <li><strong>Awards/Honors</strong>: Scholarship, Dean’s List, etc.</li>
-    </ul>
+
+    <div class="edu-item">
+      <img src="images/GT.png" alt="Georgia Tech logo" class="edu-logo">
+      <div>
+        <h2>Ph.D. in Machine Learning</h2>
+        <p><strong>ISyE, Georgia Institute of Technology</strong> · 2022 – 2027</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <img src="images/GT.png" alt="Georgia Tech logo" class="edu-logo">
+      <div>
+        <h2>M.Sc. in Computer Science</h2>
+        <p><strong>Georgia Institute of Technology</strong> · 2022 – 2025</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <img src="images/SH.png" alt="Sharif University logo" class="edu-logo">
+      <div>
+        <h2>B.Sc. in Industrial Engineering</h2>
+        <p><strong>Sharif University of Technology</strong> · 2017 – 2022</p>
+      </div>
+    </div>
+
   </main>
 
   <footer class="site-footer">
